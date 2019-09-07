@@ -4,6 +4,8 @@ on:
   push:
     branches:
     - master
+    path: 
+      - arm/*
 
 jobs:
   deploy: 
@@ -28,5 +30,5 @@ jobs:
       uses: Azure/github-actions/arm@master
       env:
         AZURE_RESOURCE_GROUP: github-actions
-        AZURE_TEMPLATE_LOCATION: sample-arm.deploy.json
-        AZURE_TEMPLATE_PARAM_LOCATION: sample-arm.deploy.parameters.json
+        AZURE_TEMPLATE_LOCATION: ./arm/sample-arm.deploy.json
+        AZURE_TEMPLATE_PARAM_LOCATION: ./arm/sample-arm.deploy.parameters.json
