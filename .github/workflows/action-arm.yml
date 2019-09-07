@@ -2,8 +2,8 @@ name: CI
 
 on: 
   push:
-    path:
-    - '*.deploy.json'
+    branches:
+    - master
 
 jobs:
   build:
