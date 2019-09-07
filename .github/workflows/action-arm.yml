@@ -29,3 +29,4 @@ jobs:
       env:
         AZURE_RESOURCE_GROUP: github-actions
         AZURE_TEMPLATE_LOCATION: sample-arm.deploy.json
+        AZURE_TEMPLATE_PARAM_LOCATION: sample-arm.deploy.parameters.json
