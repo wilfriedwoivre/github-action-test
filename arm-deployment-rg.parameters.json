@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageName": {
-            "value": "[concat('wwo', uniqueString(resourceGroup().name))]"
+            "value": "wwogithubaction"
         }
     }
 }
