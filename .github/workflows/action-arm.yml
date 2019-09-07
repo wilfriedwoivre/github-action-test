@@ -25,12 +25,14 @@ jobs:
       uses: wilfriedwoivre/github-actions/Azure/arm@dev
       env:
         SCOPE: SUBSCRIPTION
+        DEPLOYMENT_LOCATION: West Europe
         AZURE_TEMPLATE_LOCATION: arm-deployment-sub.json
 
     - name: Azure - Deploy ARM Template - Subscription Level with parameters
       uses: wilfriedwoivre/github-actions/Azure/arm@dev
       env:
         SCOPE: SUBSCRIPTION
+        DEPLOYMENT_LOCATION: West Europe
         AZURE_TEMPLATE_LOCATION: arm-deployment-sub.json
         AZURE_TEMPLATE_PARAM_LOCATION: arm-deployment-sub.parameters.json
 
