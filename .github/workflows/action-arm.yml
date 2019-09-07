@@ -6,15 +6,9 @@ on:
     - '*.deploy.json'
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
+  action "Azure Login":
+    uses: "Azure/github-actions/login@master"
+    env:
+    - AZURE_SUBSCRIPTION = "Subscription Name"
     
-    steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    secrets: ["AZURE_SERVICE_APP_ID", "AZURE_SERVICE_PASSWORD", "AZURE_SERVICE_TENANT"]
