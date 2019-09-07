@@ -13,4 +13,4 @@ jobs:
     
     - uses: "Azure/github-actions/login@master"
       with: 
-        AZURE_SUBSCRIPTION = "MVP Azure PASS"
+        AZURE_SUBSCRIPTION: "MVP Azure PASS"
