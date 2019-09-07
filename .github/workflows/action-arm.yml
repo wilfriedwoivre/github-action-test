@@ -23,4 +23,4 @@ jobs:
       env:
         AZURE_RESOURCE_GROUP: github-actions
         AZURE_TEMPLATE_LOCATION: ./sample-arm.deploy.json
-      needs: login
+    needs: login
